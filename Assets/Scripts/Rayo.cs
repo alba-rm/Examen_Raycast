@@ -23,30 +23,21 @@ void Raycast()
         {
             Debug.Log(hit.transform.name);
             SceneManager.LoadScene(1);
-            //StartCoroutine(Timer());
         }
 
         if(hit.transform.gameObject.tag == "Box2")
         {
             Debug.Log(hit.transform.name);
             SceneManager.LoadScene(2);
-            //StartCoroutine(Timer());
         }
 
         if(hit.transform.gameObject.tag == "Sphere")
         {
             Debug.Log(hit.transform.name);
             SceneManager.LoadScene(3);
-            //StartCoroutine(Timer());
         }
     }
     Debug.DrawRay(transform.position, transform.forward * 10, Color.black);
 }
-
- /*IEnumerator Timer()
-    {
-        print(Time.time);
-        yield return new WaitForSeconds(5f);
-    }*/
     
 }
