@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Rayo : MonoBehaviour
 {
+    Timer timer;
+    
 void FixedUpdate()
 {
     if(Input.GetButtonDown("Fire1"))
@@ -22,7 +24,9 @@ void Raycast()
         if(hit.transform.gameObject.tag == "Box")
         {
             Debug.Log(hit.transform.name);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(1); 
+            
+            
         }
 
         if(hit.transform.gameObject.tag == "Box2")

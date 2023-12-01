@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    /*public Text _Text;
+    public Text _text;
     //public TextMesh tiempo;
-    void Update()
+    void Start()
     {
+        _text = GameObject.Find("Canvas").GetComponentInChildren<Text>();
         StartCoroutine(Tiempo());
     }
     
     IEnumerator Tiempo()
     {
-        if (_Text != null)
+        if (_text != null)
         {
-        yield return new WaitForSeconds(5f);
-        _Text.text = 5 .ToString();
-        yield return new WaitForSeconds(4f);
-        _Text.text = 4 .ToString();
-        yield return new WaitForSeconds(3f);
-        _Text.text = 3 .ToString();
-        yield return new WaitForSeconds(2f);
-        _Text.text = 2 .ToString();
         yield return new WaitForSeconds(1f);
-        _Text.text = 1 .ToString();
+        _text.text = "5";
         yield return new WaitForSeconds(1f);
-        _Text.text = 0 .ToString();
+        _text.text = "4";
+        yield return new WaitForSeconds(1f);
+        _text.text = "3";
+        yield return new WaitForSeconds(1f);
+        _text.text = "2";
+        yield return new WaitForSeconds(1f);
+        _text.text = "1";
+        yield return new WaitForSeconds(1f);
+        _text.text = "0";
         }
-    }*/
+    }
 }
